@@ -11,7 +11,7 @@ public class User {
     @Column(name = "username")
     private String username;
     @Column(name = "balance")
-    private Long balance;
+    private Double balance;
 
     public Long getId() {
         return id;
@@ -29,11 +29,11 @@ public class User {
         this.username = username;
     }
 
-    public Long getBalance() {
+    public Double getBalance() {
         return balance;
     }
 
-    public void setBalance(Long balance) {
+    public void setBalance(Double balance) {
         this.balance = balance;
     }
 
